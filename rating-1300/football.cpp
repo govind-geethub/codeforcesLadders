@@ -5,15 +5,15 @@ void football(int n, vector<string>&team)
     unordered_map<string,int>name;
     for(int i=0; i<n; i++)
     {
-        name[team[i]]++;
+        name[team[i]]++;        // no. of goals of the 2 teams
     }
-    string a=team[0];
-    string b="";
+    string a=team[0];           // this will be 1st team
+    string b="";            
     for(int i=0; i<n; i++)
     {
         if(team[i]!=a)
         {
-            b=team[i];
+            b=team[i];          // this is 2nd
             break;
         }
     }
