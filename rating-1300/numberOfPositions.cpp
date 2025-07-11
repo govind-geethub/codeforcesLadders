@@ -3,6 +3,7 @@ using namespace std;
 int numberOfPositions(int n, int a, int b)
 {
     int i;
+    int count=0;
     for(i=1; i<=n; i++)
     {
         int count1=0;
@@ -18,9 +19,9 @@ int numberOfPositions(int n, int a, int b)
         }
         // cout << count2 << endl;
 
-        if(count1>=a && count2<=b) break;
+        if(count1>=a && count2<=b) count++;
     }
-    return i;
+    return count;
 }
 int main()
 {
